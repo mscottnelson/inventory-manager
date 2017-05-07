@@ -1,0 +1,56 @@
+{
+  "1": {
+    "edition": "Budget",
+    "finish": "Matte",
+    "size": 4,
+    "price": 0.23,
+    "units": 4,
+    "createdAt": "2017-05-07",
+    "updatedAt": "2017-05-07"
+  },
+  "2": {
+    "edition": "Extreme",
+    "finish": "Chrome",
+    "size": 9,
+    "price": 13000,
+    "units": 1,
+    "createdAt": "2017-05-07",
+    "updatedAt": "2017-05-07"
+  },
+  "3": {
+    "edition": "Standard",
+    "finish": "Gold",
+    "size": 1,
+    "price": 124.23,
+    "units": 40,
+    "createdAt": "2017-05-07",
+    "updatedAt": "2017-05-07"
+  },
+  "4": {
+    "edition": "Prime",
+    "finish": "Matte",
+    "size": 4,
+    "price": 21,
+    "units": 3,
+    "createdAt": "2017-05-07",
+    "updatedAt": "2017-05-07"
+  },
+  "5": {
+    "edition": "Prime",
+    "finish": "Distressed",
+    "size": 3,
+    "price": 10.23,
+    "units": 500,
+    "createdAt": "2017-05-07",
+    "updatedAt": "2017-05-07"
+  },
+  "6": {
+    "edition": "Elite",
+    "finish": "Red",
+    "size": 6,
+    "price": 56,
+    "units": 2,
+    "createdAt": "2017-05-07",
+    "updatedAt": "2017-05-07"
+  }
+}
