@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --history-api-fallback",
-    "serv": "node ./bin/www"
+    "serv": "node ./server/bin/www"
   },
   "author": "Michael Scott-Nelson",
   "license": "ISC",
@@ -23,6 +23,7 @@
     "react-tools": "^0.13.3",
     "sass-loader": "^4.0.2",
     "sequelize": "^3.30.4",
+    "sequelize-cli": "^2.7.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
@@ -43,7 +44,6 @@
     "react-icons": "^2.2.3",
     "react-router": "^3.0.0",
     "serve-favicon": "~2.4.2",
-    "sequelize": "^3.30.4",
-    "sequelize-cli": "^2.7.0"
+    "sequelize": "^3.30.4"
   }
 }

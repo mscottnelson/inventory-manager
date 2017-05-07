@@ -1,35 +1,35 @@
-const Sequelize = require('sequelize'),
-  sequelize = require('../db/connection.js');
+'use strict';
 
-const Widget = sequelize.define('Widget', {
-  edition: {
-    type: DataTypes.STRING
-  },
-  finish: {
-    type: DataTypes.STRING
-  },
-  size: {
-    type: DataTypes.STRING
-  },
-  price: {
-    type: DataTypes.STRING
-  },
-  units: {
-    type: DataTypes.STRING
-  },
-  createdAt: {
-    type: DataTypes.DATE
-  },
-  updatedAt: {
-    type: DataTypes.DATE
-  }
-}, {
-  instanceMethods: {
-    markForRemoval: function() {
-      return this.destroy();
+module.exports = function(sequelize, DataTypes) {
+  var Widget = sequelize.define('Widget', {
+    edition: {
+      type: DataTypes.STRING
+    },
+    finish: {
+      type: DataTypes.STRING
+    },
+    size: {
+      type: DataTypes.STRING
+    },
+    price: {
+      type: DataTypes.STRING
+    },
+    units: {
+      type: DataTypes.STRING
+    },
+    createdAt: {
+      type: DataTypes.DATE
+    },
+    updatedAt: {
+      type: DataTypes.DATE
     }
-  },
-  classMethods: {}
-});
-
-module.exports = Widget;
+  }, {
+    instanceMethods: {
+      markForRemoval: function() {
+        return this.destroy();
+      }
+    },
+    classMethods: {}
+  });
+  return Widget;
+};

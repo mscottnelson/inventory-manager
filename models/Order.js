@@ -1,20 +1,20 @@
-const Sequelize = require('sequelize'),
-  sequelize = require('../db/connection.js');
+'use strict';
 
-const Order = sequelize.define('Order', {
-  createdAt: {
-    type: DataTypes.DATE
-  },
-  updatedAt: {
-    type: DataTypes.DATE
-  }
-}, {
-  instanceMethods: {
-    markForRemoval: function() {
-      return this.destroy();
+module.exports = function(sequelize, DataTypes) {
+  var Order = sequelize.define('Order', {
+    createdAt: {
+      type: DataTypes.DATE
+    },
+    updatedAt: {
+      type: DataTypes.DATE
     }
-  },
-  classMethods: {}
-});
-
-module.exports = Order;
+  }, {
+    instanceMethods: {
+      markForRemoval: function() {
+        return this.destroy();
+      }
+    },
+    classMethods: {}
+  });
+  return Order;
+};
