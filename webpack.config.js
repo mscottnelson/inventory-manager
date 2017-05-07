@@ -2,7 +2,7 @@ const webpack = require("webpack"),
   FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
-  entry: "./client/index.js",
+  entry: "./src/index.js",
   output: {
     path: "dist/assets",
     filename: "bundle.js",
