@@ -5,12 +5,20 @@ var express = require('express'),
 
 router.get('/', function(req, res) {
   if(!req.session.orderId){
-    res.format({
-      html: function() {
-        res.json(dummy); //needs to be updated with better default render
-      }
+    Widget.findAll()
+    .then(function(widgets) {
+      res.format({
+        html: function() {
+          //res.json(widgets);
+          res.render('widgets/listAll', { widgets: widgets });
+        },
+        json: function() {
+          res.json(widgets);
+        }
+      });
     });
-  } else{
+  } else
+  {
     Widget.findAll({
       where: {
         id: req.session.orderId

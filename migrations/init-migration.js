@@ -2,7 +2,7 @@
 
 module.exports = {
   up(queryInterface, Sequelize) {
-    return queryInterface.createTable('widgets', {
+    return queryInterface.createTable('Widgets', {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
@@ -24,7 +24,7 @@ module.exports = {
         defaultValue: Sequelize.literal('CURRENT_TIMESTAMP')
       }
     }).then(() => {
-      return queryInterface.createTable('orders', {
+      return queryInterface.createTable('Orders', {
         id: {
           type: Sequelize.INTEGER,
           primaryKey: true,
@@ -43,7 +43,7 @@ module.exports = {
         notes: Sequelize.STRING
       })
     }).then(() => {
-      return queryInterface.createTable('orderLines', {
+      return queryInterface.createTable('OrderLines', {
         //junction
         id: {
           type: Sequelize.INTEGER,

@@ -5,12 +5,6 @@ module.exports = function(sequelize, DataTypes) {
     quantity: {
       type: DataTypes.INTEGER
     },
-    orderId: {
-      type: DataTypes.INTEGER
-    },
-    widgetId: {
-      type: DataTypes.INTEGER
-    },
     createdAt: {
       type: DataTypes.DATE
     },
