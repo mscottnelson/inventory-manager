@@ -10,7 +10,7 @@ router.get('/', function(req, res) {
       res.format({
         html: function() {
           //res.json(widgets);
-          res.render('widgets/listAll', { widgets: widgets });
+          res.render('widgets', { widgets: JSON.stringify(widgets) });
         },
         json: function() {
           res.json(widgets);
@@ -27,7 +27,7 @@ router.get('/', function(req, res) {
     .then(function(widgets) {
       res.format({
         html: function() {
-          res.render('widgets/listAll', { widgets: widgets });
+          res.render('widgets', { widgets: widgets });
         },
         json: function() {
           res.json(widgets);
