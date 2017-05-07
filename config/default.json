@@ -1,0 +1,12 @@
+{
+  "server": {
+    "port": 3000,
+    "dbConfig": {
+      "host": "localhost",
+      "user": "root",
+      "password": "qwerty",
+      "database": "widgetFactory_dev",
+      "post": 3306
+    }
+  },
+}

@@ -4,7 +4,8 @@
   "description": "The Uber of Widgets",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --history-api-fallback"
+    "start": "./node_modules/.bin/webpack-dev-server --history-api-fallback",
+    "serv": "node ./bin/www"
   },
   "author": "Michael Scott-Nelson",
   "license": "ISC",
@@ -25,15 +26,21 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "debug": "~2.6.3",
     "express": "^4.15.2",
     "express-mysql-session": "^1.2.0",
     "express-session": "^1.15.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.8.1",
     "mysql": "^2.13.0",
     "prop-types": "^15.5.8",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-icons": "^2.2.3",
     "react-router": "^3.0.0",
+    "serve-favicon": "~2.4.2",
     "sequelize": "^3.30.4",
     "sequelize-cli": "^2.7.0"
   }
