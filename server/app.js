@@ -13,6 +13,10 @@ var widgets = require('./routes/widgets');
 
 var app = express();
 
+//used only if react is not active
+app.set('view engine', 'jade');
+app.set('views', './views');
+
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
