@@ -1,12 +1,13 @@
 {
-  "name": "Widg",
+  "name": "Widger",
   "version": "0.0.1",
-  "description": "The Uber of Widgets",
+  "description": "--",
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --history-api-fallback",
     "serv": "node ./server/bin/www",
-    "dev": "NODE_ENV=development nodemon ./server/server.js"
+    "dev": "NODE_ENV=development nodemon ./server/server.js",
+    "local": "./node_modules/.bin/webpack-dev-server --history-api-fallback"
   },
   "author": "Michael Scott-Nelson",
   "license": "ISC",
