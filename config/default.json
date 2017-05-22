@@ -5,7 +5,7 @@
       "host": "localhost",
       "user": "root",
       "password": "qwerty",
-      "database": "widgetFactory_dev",
+      "database": "widget_dev",
       "post": 3306
     }
   },
